@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>  
+    
+    <section class="homepage">
+        <div class="wrapper">
+            <div class="content">
+                <div class="title">
+                    <h4>Task Management Application</h4>
+                    <p>A list of work that is organize and makes you productive. </p>
+                </div>
+                <form class="input-task-section">
+                    <div class="title-date-section">
+                    <input type="text"id="task-title" placeholder="Task Title" required >
+                    <input type="date" id="task-date" required>
+                    </div>
+                    <input type="text"id="task-description" placeholder="Task Description" required >
+                    <button class="task-button">Add task</button>
+                </form>
+            </div>
+            <div class="list-task">
+            </div>
+        </div>
+
+        <div class="modal-delete">
+            <h4>
+                Delete this task now?
+            </h4>
+           <div class="buttons">
+                <button class="delete-btn">
+                    Delete
+                </button>
+                <button class="back-btn">
+                    Nope
+                </button>
+           </div>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
